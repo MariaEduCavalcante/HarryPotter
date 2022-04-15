@@ -1,0 +1,884 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background: rgb(32,29,54);
+    background: linear-gradient(0deg, rgba(32,29,54,1) 0%, rgba(167,164,193,1) 100%);
+}
+
+
+/**Fontes**/
+@font-face{
+    font-family:"averia serif libre";
+    src:url(../AveriaSerifLibre-Regular.ttf);
+}
+@font-face{
+    font-family:"artifika";
+    src:url(../Artifika-Regular.ttf);
+}
+@font-face{
+    font-family:"biryani";
+    src:url(../Biryani-Regular.ttf);
+}
+
+/**Definindo menu**/
+.menu{
+    font-family: "averia serif libre";
+    height: 52px;
+    color:#fff;
+    position:fixed;
+    background-color: #4D4882;
+    z-index: 10;
+    width:100%;
+}
+.menu ul{
+    margin-left:180px;
+    list-style:none;
+    position:relative;
+}
+.menu ul li{
+    width: 200px;
+    float:left;
+    padding:2px;
+}
+.menu a{
+    padding:15px;
+    display:block;
+    text-decoration:none;
+    text-align:center;
+    color:#fff;
+}
+.menu a:hover{
+    text-decoration:underline;
+}
+.menu ul ul{
+    position:absolute;
+    visibility:hidden;
+}
+.menu h1{
+    visibility:hidden;
+    position:absolute;
+}
+/**posição do sub**/
+#oi{
+    margin-left:-290px;
+}
+#hi{
+    margin-left:10px;
+}
+#bye{
+    margin-left:-600px;
+}
+#hello{
+    margin-left:-787px;
+}
+.menu ul :hover ul{
+    visibility:visible;
+    position: fixed;
+    
+}
+.menu img{
+    width:100%;
+}
+.menu ul ul li{
+	border-bottom:solid 0px #ccc;
+}
+.menu ul ul li a{
+	width:200px;
+	height:100px;
+	padding:2px;
+}
+.menu ul ul li a:hover{
+    transition:1s;
+    transform: scale(1.2,1.2);
+}
+
+/**marcação no menu da página atual**/
+#desisto{
+    text-decoration:underline;
+}
+/**símbolo menu**/
+label[for="bt_menu"]{
+	width:50px;
+	height:50px;
+	padding:5px;
+	color:#fff;
+	text-align:center;
+	font-size:30px;
+	cursor:pointer;
+}
+#bt_menu{
+	
+display:none;
+}
+label[for="bt_menu"]{
+	display:none;
+}
+
+#help img{
+    width:70%;
+    margin-left: 20px;
+}
+
+/**HOME**/
+/**Logo**/
+#legal{
+    width: 50%;
+    height:20%;
+    margin-left:25%;
+}
+#legal img{
+    width:100%;
+}
+
+
+/**Divisão com título**/
+#bagui{
+    font-family:"artifika";
+}
+#bagui h1{
+    margin-left:50px;
+    color:#fff;
+}
+#bagui hr{
+    margin-left:50px;
+    size:2;
+    margin-right:50px;
+}
+
+/**Tabela novidades**/
+#new{
+    width:1200px;
+    height:400px;
+    margin-left:80px;    
+}
+#new img{
+    width:390px;
+    height:390px;
+    transition:1s;
+}
+#new img:hover{
+    transition:1s;
+    transform: scale(0.9,0.9);
+}
+
+/**Botão**/
+#btnn{
+    width:200px;
+    height:50px;
+    background-color: #fff;
+    border-radius:40px;
+    margin-left:43%;
+    font-family:"averia serif libre";
+    transition:1s;
+}
+#btnn h3{
+    margin-left:43px;
+    padding:11px;
+}
+#btnn a{
+    text-decoration: none;
+    color:#000;
+}
+#btnn:hover{
+    background-color: #4D4882;
+    transition:0.5s;
+}
+#btnn a:hover{
+    color:#fff;
+}
+
+/**teste1**/
+#teste1{
+    width:800px;
+    height:400px;
+    margin-left:43px;
+    
+}
+#teste1 img{
+    width:100%;
+}
+
+#teste11{
+    margin-left:925px;
+    margin-top:-320px;
+    background-color: #201D36;
+    width:350px;
+    height:220px;
+    padding:2px;
+    border-radius:5px 40px 5px 20px;
+}
+#teste11 p{
+    font-family:"biryani";
+    text-align:center; 
+    padding:10px;
+    color:#fff;
+}
+/**teste2**/
+#teste2{
+    width:800px;
+    height:400px;
+    margin-left:500px;
+}
+#teste2 img{
+    width:100%;
+}
+
+#teste22{
+    margin-left:60px;
+    margin-top:-350px;
+    background-color: #201D36;
+    width:350px;
+    height:300px;
+    padding:2px;
+    border-radius:5px 40px 5px 20px;
+}
+#teste22 p{
+    font-family:"biryani";
+    text-align:center; 
+    color:#fff; 
+    padding:7px;
+}
+
+/**Botões teste**/
+#bt , #btnpa{
+    width:200px;
+    height:50px;
+    background-color: #fff;
+    border-radius:40px;
+    margin-left:75px;
+    font-family:"averia serif libre";
+    transition:1s;
+}
+#bt h3{
+    margin-left:38px;
+    padding:11px;
+}
+#bt:hover , #btnpa:hover{
+    background-color: #4D4882;
+    transition:0.5s;
+}
+#bt a , #btnpa a{
+    text-decoration: none;
+    color:#000;
+}
+#bt a:hover , #btnpa a:hover{
+    color:#fff;
+}
+
+/**Personagens destaques**/
+#perso{
+    width:1200px;
+    height:300px;
+    margin-left:70px;
+}
+#perso img{
+    width:290px;
+    height:290px;
+    transition:1s;
+}
+#perso img:hover{
+    transition:1s;
+    transform: scale(0.9,0.9);
+}
+
+/**Definindo o footer**/
+.footer{
+    width:100%;
+    height:200px;
+    background-color:#4D4882;
+    margin-top:100px;
+}
+#baixo{
+    margin-top:40px;
+    margin-left: 50px;
+}
+
+#footer2{
+    height:60px;
+    margin-left:50px;
+}
+#footer2 img{
+    width:40px;
+    height:40px;
+    padding:5px;
+}
+#copy{
+    margin-top:-35px;
+    margin-left:530px;
+    color:#fff;
+}
+#links ul li{
+    display: inline-block;
+    padding:5px;
+  
+}
+#links ul li a{
+    color:#fff;
+}
+#links{
+    margin-left:500px;
+    margin-top:-60px;
+}
+#footer2 img:hover{
+    opacity: 0.5;
+}
+
+
+/**EXPLORAR**/
+/**Divisor de página**/
+#cabeca{
+    margin-left:5%;
+    font-family: "artifika";
+    color:#fff;
+
+}
+#cabeca hr{
+    width:95%;
+    height:1px;
+}
+
+/**Definindo a parte dos filmes**/
+.filmesleft li , .filmesright li, .filmescenter li{
+    list-style: none;
+    padding:5px; 
+}
+.filmesright{
+    margin-left:900px;
+    margin-top:-220px;
+}
+.filmesleft{
+    margin-left:10px;
+}
+.filmescenter{
+    margin-left:455px;
+    margin-top:-220px;
+}
+
+.filmesleft,.filmesright,.filmescenter{
+    width:440px;
+    height:220px;
+}
+.filmesleft img ,.filmesright img, .filmescenter img{
+    width:100%;
+}
+.filmesleft ul ul , .filmesright ul ul, .filmescenter ul ul{
+	position:absolute;
+	visibility:hidden;
+}
+/**Texto dos filmes aparecendo**/
+.filmesleft ul :hover ul , .filmesright ul :hover ul,  .filmescenter ul :hover ul{
+	visibility:visible;
+    transition:1s;
+    transform: scale(1.2,1.2);
+    width:410px;
+    height:125px;
+    margin-top:-220px
+}
+.filmesleft ul :hover ul{
+    margin-left: 450px;
+}
+.filmesright ul :hover ul{
+    margin-left: -430px;
+}
+
+#img1 img{
+    cursor:pointer;
+}
+#img1 img:hover{
+    opacity: 0.8;
+}
+
+/**Local de pesquisa**/
+#pesq1{
+    background-color: blueviolet;
+    width:23%;
+    height:30px;
+    margin-left:72%;
+}
+#pesq1 input{
+    width:100%;
+    height:100%;
+    border-style:none;
+    padding:5px;
+}
+#pesq1 input:hover , input:focus{
+    background-color: hsl(0, 0%, 91%);
+}
+#lupa {
+    width:30px;
+    height:30px;
+    margin-top:-30px;
+    margin-left:68%;
+}
+#lupa img{
+    width:100%;
+}
+
+/**Personagens**/
+/**Imagens**/
+#tapado , #mione, #lesado , #luna{
+    background-color: #201D36;
+    width:250px;
+    height:300px;
+}
+#tapado, #lesado{
+    margin-left:10%;
+}
+#mione , #luna{
+    margin-left:73%;
+}
+.perso img{
+    margin-top:-33px;
+    width:100%;
+}
+#mione img{
+    width:70%;
+    margin-left:30px;
+}
+#luna img{
+    width:78%;
+    margin-left:30px;
+}
+#lesado img{
+    width:106%;
+}
+/**Texto**/
+#tapadoo , #mionee , #lesadoo , #lunaa{
+    background-color: #fff;
+    width:600px;
+    height:300px;
+    margin-top:-300px;
+}
+.perso h2{
+    font-family:"artifika";
+    text-align:center;
+}
+.perso p{
+    font-family:"biryani";
+    text-align:center;
+}
+#tapadoo , #lesadoo{
+    margin-left:30%;
+}
+#mionee , #lunaa{
+    margin-left:27%;  
+}
+
+/**Botão**/
+#cansei{
+    background-color: #201D36;
+    width:200px;
+    height:50px;
+    border-radius:40px;
+    font-family:"averia serif libre";
+    margin-left:34%;
+}
+#cansei h3{
+    margin-left:48px;
+    padding:11px;
+}
+#cansei a{
+    text-decoration:none;
+    color:#fff;
+}
+#cansei:hover{
+    background-color: #fff;
+    border-style:solid;
+    border-color:#000;
+}
+#cansei a:hover{
+    color:#000;
+}
+
+
+/**BIBLIOTECA**/
+/**feitiço1**/
+#fei1{
+    width:70%;
+    height:400px;
+    margin-left:15%;
+    transition:1s;
+}
+#fei1 img{
+    width:50%;
+    height:100%;
+}
+#fei1 h2{
+    color:#fff;
+    font-family:"artifika";
+    margin-top:-350px;
+    margin-left:62%;
+}
+#fei1 p{
+    color:#fff;
+    font-family:"biryani";
+    margin-left:50%;
+    text-align:center;
+}
+/**posição do botão do feitiço1**/
+#btnpa{
+    margin-left:65%;
+}
+#btnpa h3{
+    padding:11px;
+    margin-left:23px;
+}
+
+/**segunda parte dos feitiços**/
+#fei2 , #fei3 , #fei4{
+    width:30%;
+    height:400px;
+    text-align:center;
+    color:#fff;
+    transition:1s;
+}
+#fei2 img , #fei3 img , #fei4 img{
+    width:100%;
+    height:50%;
+}
+#fei2{
+    margin-left:3%;
+}
+#fei3{
+    margin-top:-400px;
+    margin-left:35%;
+}
+#fei4{
+    margin-top:-400px;
+    margin-left:67%;
+}
+#fei2:hover, #fei3:hover, #fei4:hover , #fei1:hover{
+    background-color: #201D36;
+    transition:1s;
+    transform:scale(1.1,1.1);
+}
+#fei2 h2, #fei3 h2, #fei4 h2{
+    font-family:"artifika";
+}
+#fei3 p , #fei2 p, #fei4 p{
+    font-family:"biryani";
+    padding:3px;
+}
+/**Poções**/
+#poc1 , #poc2{
+    width:45%;
+    height:300px;
+    margin-left:3%;
+    transition:1s;
+}
+#poc2{
+    margin-top:-318px;
+    margin-left:52%;
+}
+#poc1 img , #poc2 img{
+    height:100%;
+    width:50%;
+}
+#poc1:hover , #poc2:hover{
+    background-color: #201D36;
+    transition:1s;
+    transform:scale(1.1,1.1);
+}
+#poc1 h2 , #poc2 h2{
+    color:#fff;
+    font-family:"artifika";
+    margin-left:65%;
+    margin-top:-300px;
+}
+#poc1 p , #poc2 p{
+    font-family:"biryani";
+    color:#fff;
+    margin-left:50%;
+    text-align:center;
+    padding:3px;
+}
+
+/**CASAS**/
+#casas{
+    width:300px;
+    height:300px;
+    margin-left:20%;
+}
+#casas img{
+    width:100%;
+}
+#casass{
+    width:540px;
+    height:400px;
+    margin-left:60%;
+    background-color: #201D36;
+    margin-top:-400px;
+    border-radius: 0px 100px;
+}
+/**imagens**/
+#corvi , #grifi, #sonse , #lufa{
+    width:250px;
+    height:300px;
+}
+#corvi, #sonse{
+    margin-left:5%;
+}
+#grifi , #lufa{
+    margin-left:79%;
+}
+.houses img{
+    width:100%;
+}
+/**texto**/
+#corvii , #grifii , #sonsee , #lufaa{
+    width:600px;
+    height:300px;
+    margin-top:-300px;
+    border-radius:5px 40px 5px 20px;
+    border-style:solid;
+    border-color:#fff;
+    transition:1s;
+}
+#corvii, #sonsee{
+    margin-left:25%;
+}
+#grifii ,  #lufaa{
+    margin-left:32%;  
+}
+
+#corvii:hover{
+    background-color: #222F5B;
+    transition:1s;
+    transform:scale(1.1,1.1);
+}
+#grifii:hover{
+    background-color: #AE0001;
+    transition:1s;
+    transform:scale(1.1,1.1);
+}
+#sonsee:hover{
+    background-color: #2A623D;
+    transition:1s;
+    transform:scale(1.1,1.1);
+}
+#lufaa:hover{
+    background-color: #BE8900;
+    transition:1s;
+    transform:scale(1.1,1.1);
+}
+
+.houses h2 , #casass h2{
+    font-family:"artifika";
+    text-align:center;
+    color:#fff;
+}
+.houses p , #casass p{
+    font-family:"biryani";
+    text-align:center;
+    color:#fff;
+    padding:10px;
+}
+/**pessoa**/
+#llufa{
+    width:250px;
+    height:300px;
+    margin-left:12%;
+    margin-top:-305px;
+    border-radius:5px;
+}
+#llufa img , #ccorvi img{
+    height:100%;
+}
+#ccorvi{
+    width:250px;
+    height:300px;
+    margin-left:72%;
+    margin-top:-298px;
+    border-radius:5px;
+}
+
+/**FAVORITOS**/
+/**Parte escrita**/
+#txt1{
+    color:#fff;
+    text-align: center;
+    padding:20px;
+}
+#txt1 h2{
+    font-family: "averia serif libre";
+}
+#txt1 p{
+    font-family: "biryani";
+}
+/**Imagem de fundo**/
+#capa1 , #capa2 , #capa3 , #capa4 , #capa5{
+    height:500px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#capa1{
+    background-image: url(../img/favs/capa1.jpg);
+}
+#capa2{
+    background-image: url(../img/favs/capa2.jpg);
+}
+#capa3{
+    background-image: url(../img/favs/capa3.png);
+}
+#capa4{
+    background-image: url(../img/favs/capa4.jpg);
+}
+#capa5{
+    background-image: url(../img/favs/capa5.jpg);
+}
+
+/** botão que leva ao início**/
+.btn{
+    width:60px;
+    height:60px;
+    display:flat;
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    bottom:20px;
+    right:15px;
+    text-decoration:none;
+    content:url(../img/seta.png)
+}
+
+/**RESPONSIVIDADE**/
+@media(max-width:800px){
+    /**Menu**/
+    .menu img{
+        visibility:hidden;
+        position:absolute;
+    }
+    .menu h1{
+        visibility:visible;
+        position:relative;
+    }
+    .menu ul li{
+		width:100%;
+		float:none;	
+        padding:0px;
+	}
+	.menu ul li:hover ul{
+		height:auto;
+		max-height:400px;
+	}
+	.menu ul ul{
+		position:static;
+		overflow:hidden;
+		max-height:0;
+		transition: all 0.4s;
+	}
+    #oi , #hi , #bye , #hello{
+        margin-left:0px;
+    }
+    #bt_menu{
+		display:none;
+	}
+    /**Símbolo**/
+	label[for="bt_menu"]{
+		display:block;
+	}
+	#bt_menu:checked ~ .menu{
+		margin-left:0;
+	}
+    .menu ul{
+        margin-left:0px;
+        list-style:none;
+        position:relative;
+    }
+    .menu{
+		margin-top:5px;
+		margin-left:-101%;
+		transition: all 0.4s;
+        background-color:transparent;
+	}
+    .menu a{
+        background-color: #4D4882;
+    }
+    .menu ul ul li a{
+        width:660px;
+        height:50px;
+        background-color: #222F5B;
+    }
+    /**Footer**/
+    #links{
+        margin-left:280px;
+    }
+    #copy{
+        margin-left:260px;
+    }
+    /**HOME**/
+    #teste1 , #teste2{
+        width:90%;
+        margin-left:5%;
+    }
+    #teste11, #teste22{
+        margin-left:22%;
+        margin-top:-90px;
+    }
+    /**CASAS**/
+    #casas{
+        margin-left:1%;
+        width:30%;
+    }
+    #casass{
+        width:61%;
+        margin-left:38%;
+    }
+    #corvii , #grifii , #sonsee , #lufaa, #fei1{
+        width:90%;
+        margin-left:5%;
+    }
+    #ccorvi , #llufa{
+        margin-top:20px;
+    }
+    #ccorvi , #grifi , #lufa{
+        margin-left:60%;
+    }
+    #corvi img , #grifi img, #sonse img , #lufa img{
+        margin-top:300px;
+    }
+    /**EXPLORAR**/
+    .filmesleft,.filmesright,.filmescenter{
+        margin-left:100px;
+    }
+    .filmesright,.filmescenter{
+        margin-top:460px;
+    }
+    .filmesleft ul :hover ul , .filmesright ul :hover ul{
+        margin-left:0px;
+    }
+    #tapado, #lesado, #mione , #luna{
+        margin-left:5%;
+        width:30%;
+    }
+    #tapadoo , #lesadoo , #mionee , #lunaa{
+        margin-left:35%;
+        width:60%;
+    }
+    /**BIBLIOTECA**/
+    #btnpa{
+       visibility: hidden;
+       position:absolute;
+    }
+    #fei4{
+        margin-top:50px;
+        width:50%;
+        margin-left:25%;
+    }
+    #fei2 , #fei3{
+        width:45%;
+    }
+    #fei3{
+        margin-left:51%;
+    }
+    #poc1 , #poc2{
+        width:90%;
+        margin-left:5%;
+    }
+    #poc2{
+        margin-top:0px;
+    }
+}
